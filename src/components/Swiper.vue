@@ -120,7 +120,7 @@
           <div class="ab-container">
             <img src="../assets/ab-01.png" alt="">
           </div>
-          <div class="title-container">
+          <div class="title-container animated fadeInLeft">
             <h1 class="title">阿布跑跑<span class="zhihui">智慧</span>鞋垫</h1>
             <p class="sub">让每一步都放心</p>
             <p class="p">三重定位 | 安全守护 | 历史轨迹 | 多人协助</p>
@@ -130,7 +130,7 @@
     </el-carousel-item>
     <el-carousel-item>
       <div class="wraper page-02">
-        <div class="container ">
+        <div class="container">
           <div class="col-01">
             <div class="ab-container">
                 <img src="../assets/ab-02.png" alt="">

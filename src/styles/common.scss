@@ -1,34 +1,3 @@
-<template>
-  <div id="app">
-    <Menu />
-    <Swiper />
-    <Aboo />
-    <Footer />
-  </div>
-</template>
-
-<script>
-import Menu from './Menu'
-import Swiper from './Swiper'
-import Aboo from './Aboo'
-import Footer from './Footer'
-export default {
-  name: 'app',
-  components: {
-    Menu,
-    Swiper,
-    Aboo,
-    Footer
-  },
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
-</script>
-
-<style lang="scss">
 @charset "utf-8";
 *{
     box-sizing: border-box;
@@ -80,4 +49,3 @@ img {
     max-width: 1280px;
     height: 100%;
 }
-</style>
