@@ -158,6 +158,6 @@ import { Carousel, CarouselItem } from "element-ui";
 Vue.component(Carousel.name, Carousel);
 Vue.component(CarouselItem.name, CarouselItem);
 export default {
-  name: "swiper"
+  name: "Swiper"
 };
 </script>

@@ -14,11 +14,12 @@
 
 <script>
 import 'styles/common.scss'
+import 'element-ui/lib/theme-chalk/index.css'
 import Menu from './Menu'
 import XXX from './XXX'
 import Foot from './Foot'
 export default {
-  name: 'app',
+  name: 'Help',
   components: {
     Menu,
     XXX,

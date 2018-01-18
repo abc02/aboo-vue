@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: "foot",
+  name: "Foot",
   props: {
     styles: {
       type: Object,

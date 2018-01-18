@@ -108,7 +108,7 @@
   import preview03 from "assets/preview-03.png";
   import preview04 from "assets/preview-04.png";
   export default {
-    name: "aboo",
+    name: "Aboo",
     data() {
       return {
         activeIndex: 0,

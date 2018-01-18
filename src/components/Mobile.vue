@@ -209,6 +209,6 @@
   import 'styles/common.scss'
   import 'animate.css'
   export default {
-    name: 'mobile'
+    name: 'Mobile'
   }
 </script>

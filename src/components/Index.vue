@@ -1,9 +1,3 @@
-<style>
-  [v-cloak] {
-    display: none;
-  }
-</style>
-
 <template>
   <div id="app" v-cloak>
     <Menu activeIndex="1" />
@@ -18,12 +12,13 @@
   import 'node_modules/fonts.css/fonts.css'
   import 'styles/common.scss'
   import 'animate.css'
+  import 'element-ui/lib/theme-chalk/index.css'
   import Menu from './Menu'
   import Swiper from './Swiper'
   import Aboo from './Aboo'
   import Foot from './Foot'
   export default {
-    name: 'app',
+    name: 'Index',
     components: {
       Menu,
       Swiper,
