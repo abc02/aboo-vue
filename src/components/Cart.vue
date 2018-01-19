@@ -1,44 +1,53 @@
+<style scoped>
+  h4 {
+    font-weight: 600;
+  }
+  .el-input-number {
+    width: 120px;
+  }
+</style>
 
 <template>
-  <div id="app" v-cloak>
-    <Menu />
-    <div class="wraper">
-      cart2
-    </div>
-    <Foot />
+  <div>
+    <el-container>
+      <el-table :data="tableData" style="width: 100%">
+        <el-table-column prop="name" label="商品" width="600">
+        </el-table-column>
+        <el-table-column prop="price" label="价格" width="200">
+        </el-table-column>
+        <el-table-column prop="number" label="数量" width="200">
+          <el-input-number v-model="num1" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
+        </el-table-column>
+        <el-table-column prop="subtotal" label="小计" width="200">
+        </el-table-column>
+        <el-table-column prop="delete" width="80">
+        </el-table-column>
+      </el-table>
+    </el-container>
   </div>
 </template>
 
 <script>
-  import Vue from 'vue'
-  import {
-    Row,
-    Col,
-    Button
-  } from 'element-ui'
-  import 'styles/common.scss'
-  import 'element-ui/lib/theme-chalk/index.css'
-  import Menu from './Menu'
-  import Foot from './Foot'
-  Vue.component(Row.name, Row)
-  Vue.component(Col.name, Col)
-  Vue.component(Button.name, Button)
   export default {
-    name: 'Buy',
-    components: {
-      Menu,
-      Foot
-    },
-    created() {
-      this.$bus.on('add-todo', this.addTodo);
-      this.$bus.once('once', () => console.log('This listener will only fire once'));
-    },
-    beforeDestroy() {
-      this.$bus.off('add-todo', this.addTodo);
+    name: 'Cart',
+    data() {
+      return {
+        num1: 1,
+        tableData: [{
+          name: '商品昵称',
+          price: 3299,
+          number: 2,
+          subtotal: 3299,
+          delete: true
+        }]
+      }
     },
     methods: {
-      addTodo(newTodo) {
-        this.todos.push(newTodo);
+      redirectToCart() {
+        this.$emit('redirectToCart')
+      },
+      handleChange(value) {
+        console.log(value);
       }
     }
   }

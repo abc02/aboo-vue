@@ -88,6 +88,7 @@ module.exports = {
       '@': path.join(__dirname, './src'),
       'assets': '@/assets',
       'components': '@/components',
+      'mixins': '@/mixins',
       'styles': '@/styles'
     },
     extensions: ['*', '.js', '.vue', '.json']

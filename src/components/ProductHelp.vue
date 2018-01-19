@@ -69,11 +69,14 @@
       }
     }
   }
+  li{
+    list-style: none !important;
+  }
 </style>
 
 <template>
-  <div class="wraper">
-    <div class="help-container">
+  <el-container class="wraper">
+    <el-row class="el-row help-container">
       <div class="prod-package row">
         <h1>包装及内容</h1>
         <div class="prod-img">
@@ -127,8 +130,8 @@
           <li>本鞋垫在断电状态和服务区以外时，定位功能是无法工作的。</li>
         </ul>
       </div>
-    </div>
-  </div>
+    </el-row>
+  </el-container>
 </template>
 
 <script>

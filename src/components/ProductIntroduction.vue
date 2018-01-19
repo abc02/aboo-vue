@@ -68,8 +68,8 @@
 
 <template>
   <div class="aboo">
-    <div class="wraper">
-      <div class="container">
+    <el-container class="wraper">
+      <el-row class="container">
         <ul class="preview-container">
           <li class="preview-item"
             v-for="(item, index) in list" 
@@ -98,8 +98,8 @@
             </div>
           </li>
         </ul>
-      </div>
-    </div>
+      </el-row>
+    </el-container>
   </div>
 </template>
 <script>

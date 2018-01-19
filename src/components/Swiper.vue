@@ -115,7 +115,7 @@
     height="70vh"
     >
     <el-carousel-item>
-      <div class="wraper page-01">
+      <el-container class="wraper page-01">
         <div class="container">
           <div class="ab-container">
             <img src="../assets/ab-01.png" alt="">
@@ -126,10 +126,10 @@
             <p class="p">三重定位 | 安全守护 | 历史轨迹 | 多人协助</p>
           </div>
         </div>
-      </div>
+      </el-container>
     </el-carousel-item>
     <el-carousel-item>
-      <div class="wraper page-02">
+      <el-container class="wraper page-02">
         <div class="container">
           <div class="col-01">
             <div class="ab-container">
@@ -146,7 +146,7 @@
               <a class="download-button" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.gcs.mcj.insole">立即下载</a>
           </div>
           </div>
-      </div>
+      </el-container>
     </el-carousel-item>
   </el-carousel>
 </template>

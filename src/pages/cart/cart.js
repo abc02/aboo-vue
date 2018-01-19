@@ -1,9 +1,21 @@
-import Vue from 'vue'
-import VueBus from 'vue-bus'
-import Cart from 'components/Cart.vue'
+import 'normalize.css'
+import 'animate.css'
+import 'styles/common.scss'
+import 'node_modules/fonts.css/fonts.css'
+import 'element-ui/lib/theme-chalk/index.css'
 
-Vue.use(VueBus)
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+import NavigationBar  from 'components/NavigationBar'
+import Cart  from 'components/Cart'
+import Foot from 'components/Foot'
+
+Vue.use(ElementUI)
 new Vue({
   el: '#app',
-  render: h => h(Cart)
+  components: {
+    'navigation-bar': NavigationBar,
+    'cart': Cart,
+    'foot': Foot
+  },
 })

@@ -1,8 +1,21 @@
+import 'normalize.css'
+import 'animate.css'
+import 'styles/common.scss'
+import 'node_modules/fonts.css/fonts.css'
+import 'element-ui/lib/theme-chalk/index.css'
+
 import Vue from 'vue'
-import VueBus from 'vue-bus'
-import Product from 'components/Product.vue'
-Vue.use(VueBus)
+import ElementUI from 'element-ui'
+import NavigationBar  from 'components/NavigationBar'
+import Product  from 'components/Product'
+import Foot from 'components/Foot'
+
+Vue.use(ElementUI)
 new Vue({
   el: '#app',
-  render: h => h(Product)
+  components: {
+    'navigation-bar': NavigationBar,
+    'product': Product,
+    'foot': Foot
+  },
 })
